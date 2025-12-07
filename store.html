@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forged Machine Store – Coming Soon</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Roboto:wght@300;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- NAV -->
+  <header class="site-header">
+    <div class="logo">FORGED<span>MACHINE</span></div>
+
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="index.html#gallery" class="nav-link">Gallery</a>
+      <a href="index.html#about" class="nav-link">About</a>
+      <a href="store.html" class="nav-link active">Store</a>
+    </nav>
+  </header>
+
+  <!-- STORE -->
+  <section class="section section-dark full-height-center">
+    <div class="section-inner store-coming-soon">
+      <h1>Store</h1>
+      <p class="coming-soon-text">Coming Soon</p>
+
+      <p>
+        Merchandise, apparel, posters, digital downloads, and more will be available soon.
+        Check back later — the Machine is forging new creations.
+      </p>
+
+      <a href="index.html" class="btn btn-outline" style="margin-top: 1.5rem;">Back to Home</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Forged Machine. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
