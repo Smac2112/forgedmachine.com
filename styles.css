@@ -61,23 +61,27 @@ html, body {
 
 /* HERO */
 .hero {
-  min-height: 70vh;
+  position: relative;
+  min-height: 90vh; /* a bit taller so more of the image shows */
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  background:
-    radial-gradient(circle at 20% 0%, #24001055, transparent 60%),
-    radial-gradient(circle at 80% 100%, #00082055, transparent 60%),
-    #050509;
-  position: relative;
+
+  background-color: #050509;
+  background-image: url("/images/band1.png");
+  background-size: cover;
+  background-position: center 80%;  /* shift view down toward the band */
+  background-repeat: no-repeat;
 }
+
 
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(135deg, rgba(255,0,76,0.2), transparent 70%);
+  background: rgba(0, 0, 0, 0.45);
 }
+
 
 .hero-content {
   position: relative;
