@@ -307,3 +307,33 @@ html, body {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/* Narrower content area for text sections */
+.section-inner.narrow {
+  max-width: 750px;
+  margin: auto;
+  line-height: 1.75;
+  font-size: 1.05rem;
+  color: #dcdcdc;
+}
+
+/* Improve section headers */
+.section-inner.narrow h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.18em;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  text-align: left;
+}
+
+/* Better paragraph spacing */
+.section-inner.narrow p {
+  margin-bottom: 1.3rem;
+}
+
+/* Slight glow on headers for atmosphere */
+.section-dark h2,
+.section-mid h2 {
+  text-shadow: 0 0 12px rgba(255, 0, 0, 0.25);
+}
