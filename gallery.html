@@ -3,32 +3,33 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Photo Gallery – Forged Machine</title>
-  <link rel="stylesheet" href="styles.css" />
+
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <!-- HEADER -->
   <header class="site-header">
-    <div class="logo">FORGED<span>MACHINE</span></div>
+    <div class="logo glitch" data-text="FORGED MACHINE">
+      FORGED<span>MACHINE</span>
+    </div>
+
     <nav class="nav">
-      <a href="index.html" class="nav-link">Home</a>
+      <a href="index.html#hero" class="nav-link">Home</a>
       <a href="gallery.html" class="nav-link active">Gallery</a>
       <a href="store.html" class="nav-link">Store</a>
     </nav>
   </header>
 
-  <!-- GALLERY PAGE -->
   <main>
     <section class="section section-dark">
-      <div class="gallery-page-container">
-        <h1 class="gallery-title">Photo Gallery</h1>
+      <div class="gallery-page-container fade-section">
+        <h1 class="gallery-title">Full Gallery</h1>
+        <p class="section-subtitle">Tap any image to view it larger. Add or remove photos anytime.</p>
 
         <div class="gallery-page-grid">
-
-          <!-- Gallery PHOTOS -->
+          <!-- All of these use the lightbox -->
 <a href="images/forgedmachine logo best.png" target="_blank"><img src="images/forgedmachine logo best.png" class="gallery-full" alt=""></a>
 <a href="images/band5.png" target="_blank"><img src="images/band5.png" class="gallery-full" alt=""></a>
 <a href="images/guitar1.png" target="_blank"><img src="images/guitar1.png" class="gallery-full" alt=""></a>
@@ -51,19 +52,23 @@
 <a href="images/band3.png" target="_blank"><img src="images/band3.png" class="gallery-full" alt=""></a>
 <a href="images/band6.png" target="_blank"><img src="images/band6.png" class="gallery-full" alt=""></a>
 
-
         </div>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
+  <!-- Shared lightbox -->
+  <div id="lightboxOverlay">
+    <div id="lightboxInner">
+      <img id="lightboxImage" src="" alt="Forged Machine image" />
+      <button id="lightboxClose">&times;</button>
+    </div>
+  </div>
+
   <footer class="site-footer">
     <p>&copy; <span id="year"></span> Forged Machine. All rights reserved.</p>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>

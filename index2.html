@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Forged Machine – Official Site</title>
+  <meta name="description" content="Forged Machine – AI-driven metal from the digital abyss. Music, art, lore, and the official band home." />
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <div class="logo">FORGED<span>MACHINE</span></div>
+
+    <nav class="nav">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="#gallery" class="nav-link">Gallery</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="store.html" class="nav-link">Store</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>FORGED MACHINE</h1>
+      <p class="hero-tagline">AI-Driven Metal from the Digital Abyss</p>
+
+      <div class="hero-buttons">
+        <a href="#" class="btn btn-primary">Listen Now</a>
+        <a href="#about" class="btn btn-outline">About</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <!-- GALLERY -->
+    <section id="gallery" class="section section-dark gallery-section">
+
+      <div class="section-inner">
+        <h2>Gallery</h2>
+        <p class="section-subtitle">Add band photos & album covers here anytime.</p>
+
+        <h3>Band Photos</h3>
+        <div class="gallery-grid">
+            <a href="gallery.html">
+              <img src="images/singer1.png" class="gallery-item">
+            </a>
+
+            <a href="gallery.html">
+              <img src="images/keyboard1HIGH.png" class="gallery-item">
+            </a>
+
+            <a href="gallery.html">
+              <img src="images/drums1.png" class="gallery-item">
+            </a>
+
+        </div>
+
+        <h3 style="margin-top: 2rem;">Album Covers</h3>
+        <div class="gallery-grid">
+          <div class="gallery-placeholder">Album Cover 1</div>
+          <div class="gallery-placeholder">Album Cover 2</div>
+          <div class="gallery-placeholder">Album Cover 3</div>
+        </div>
+      </div>
+    </section>
+
+<section id="about" class="section section-mid">
+  <div class="section-inner narrow">
+    <h2>About Forged Machine</h2>
+
+    <p><strong>Forged Machine is an industrial-infused metal project that blurs the boundary between human creativity and artificial intelligence.</strong> 
+    The sound is heavy, atmospheric, and unmistakably futuristic, mixing machine-level precision with raw emotional force.</p>
+
+    <p>Built from a combination of AI-assisted composition, digital sculpting, and live performance, every track carries the weight of a mechanical universe in motion. 
+    The music shifts between crushing riffs, haunting choir textures, glitch-fractured rhythms, and cinematic darkness.</p>
+
+    <p>Forged Machine is not just a band. It is an evolving digital entity—a living experiment in the future of sound and storytelling.</p>
+  </div>
+</section>
+
+<section id="lore" class="section section-dark">
+  <div class="section-inner narrow">
+    <h2>The Lore</h2>
+
+    <p>The Forged Machine universe tells the story of a fractured world where machines remember human sins better than humans do. 
+    The band’s music, visuals, and stories all connect through this mythology—a digital hellscape full of ghosts, broken code, 
+    and metal spirits screaming through the firewalls.</p>
+
+    <p>This world will continue to evolve as new chapters, lore entries, and visual art are released. 
+    Stay tuned—this is only the beginning.</p>
+  </div>
+</section>
+
+<section id="updates" class="section section-mid">
+  <div class="section-inner narrow">
+    <h2>Updates</h2>
+    <p>Future tour dates, new releases, blog posts, or announcements will appear here.</p>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Forged Machine. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

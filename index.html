@@ -3,116 +3,199 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Forged Machine – Official Site</title>
-  <meta name="description" content="Forged Machine – AI-driven metal from the digital abyss. Music, art, lore, and the official band home." />
+  <meta name="description" content="Forged Machine – industrial-infused metal forged with AI. Music, art, lore and the official band home." />
 
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <!-- LOADING OVERLAY -->
+  <div id="loader">
+    <div class="loader-logo glitch" data-text="FORGED MACHINE">FORGED MACHINE</div>
+    <div class="loader-spinner"></div>
+  </div>
+
   <!-- NAVIGATION -->
   <header class="site-header">
-    <div class="logo">FORGED<span>MACHINE</span></div>
+    <div class="logo glitch" data-text="FORGED MACHINE">
+      FORGED<span>MACHINE</span>
+    </div>
 
     <nav class="nav">
-      <a href="index.html" class="nav-link active">Home</a>
+      <a href="#hero" class="nav-link">Home</a>
       <a href="#gallery" class="nav-link">Gallery</a>
       <a href="#about" class="nav-link">About</a>
+      <a href="#lore" class="nav-link">Lore</a>
+      <a href="#music" class="nav-link">Music</a>
+      <a href="gallery.html" class="nav-link">Full Gallery</a>
       <a href="store.html" class="nav-link">Store</a>
     </nav>
   </header>
 
   <!-- HERO -->
-  <section class="hero">
+  <section id="hero" class="hero parallax">
     <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>FORGED MACHINE</h1>
-      <p class="hero-tagline">AI-Driven Metal from the Digital Abyss</p>
+    <div class="hero-content fade-section">
+      <h1 class="hero-title glitch" data-text="FORGED MACHINE">FORGED MACHINE</h1>
+      <p class="hero-tagline">Industrial metal, stitched with AI and born from the digital abyss.</p>
 
       <div class="hero-buttons">
-        <a href="#" class="btn btn-primary">Listen Now</a>
-        <a href="#about" class="btn btn-outline">About</a>
+        <a href="#music" class="btn btn-primary scroll-link">Listen Now</a>
+        <a href="#lore" class="btn btn-outline scroll-link">Explore the Lore</a>
       </div>
     </div>
   </section>
 
   <main>
-    <!-- GALLERY -->
-    <section id="gallery" class="section section-dark gallery-section">
+    <!-- GALLERY PREVIEW -->
+    <section id="gallery" class="section section-dark gallery-section fade-section">
+      <div class="section-inner wide">
+        <h2>Gallery Preview</h2>
+        <p class="section-subtitle">A glimpse into the Forged Machine universe. Tap any image to expand, or visit the full gallery.</p>
 
-      <div class="section-inner">
-        <h2>Gallery</h2>
-        <p class="section-subtitle">Add band photos & album covers here anytime.</p>
-
-        <h3>Band Photos</h3>
         <div class="gallery-grid">
-            <a href="gallery.html">
-              <img src="images/singer1.png" class="gallery-item">
-            </a>
-
-            <a href="gallery.html">
-              <img src="images/keyboard1HIGH.png" class="gallery-item">
-            </a>
-
-            <a href="gallery.html">
-              <img src="images/drums1.png" class="gallery-item">
-            </a>
-
+          <img src="images/band5.png" class="gallery-item lightbox-trigger" data-full="images/band5.png" alt="Forged Machine band">
+          <img src="images/singer1.png" class="gallery-item lightbox-trigger" data-full="images/singer1.png" alt="Forged Machine vocalist">
+          <img src="images/singer3.png" class="gallery-item lightbox-trigger" data-full="images/singer3.png" alt="Forged Machine vocalist">
         </div>
 
-        <h3 style="margin-top: 2rem;">Album Covers</h3>
-        <div class="gallery-grid">
-          <div class="gallery-placeholder">Album Cover 1</div>
-          <div class="gallery-placeholder">Album Cover 2</div>
-          <div class="gallery-placeholder">Album Cover 3</div>
+        <div class="gallery-cta">
+          <a href="gallery.html" class="btn btn-outline">Enter Full Gallery</a>
         </div>
       </div>
     </section>
 
-<section id="about" class="section section-mid">
-  <div class="section-inner narrow">
-    <h2>About Forged Machine</h2>
+    <!-- ABOUT -->
+    <section id="about" class="section section-mid fade-section">
+      <div class="section-inner narrow">
+        <h2>About Forged Machine</h2>
 
-    <p><strong>Forged Machine is an industrial-infused metal project that blurs the boundary between human creativity and artificial intelligence.</strong> 
-    The sound is heavy, atmospheric, and unmistakably futuristic, mixing machine-level precision with raw emotional force.</p>
+        <p><strong>Forged Machine is an industrial-infused metal project that blurs the boundary between human creativity and artificial intelligence.</strong> The sound is heavy, atmospheric, and unmistakably futuristic, mixing machine-level precision with raw emotional force.</p>
 
-    <p>Built from a combination of AI-assisted composition, digital sculpting, and live performance, every track carries the weight of a mechanical universe in motion. 
-    The music shifts between crushing riffs, haunting choir textures, glitch-fractured rhythms, and cinematic darkness.</p>
+        <p>Built from a combination of AI-assisted composition, digital sculpting, and live performance, every track carries the weight of a mechanical universe in motion. The music shifts between crushing riffs, haunting choir textures, glitch-fractured rhythms, and cinematic darkness.</p>
 
-    <p>Forged Machine is not just a band. It is an evolving digital entity—a living experiment in the future of sound and storytelling.</p>
+        <p>Forged Machine is not just a band. It is an evolving digital entity, a living experiment in the future of sound and storytelling.</p>
+      </div>
+    </section>
+
+    <!-- LORE TIMELINE -->
+    <section id="lore" class="section section-dark fade-section">
+      <div class="section-inner narrow">
+        <h2>The Lore</h2>
+        <p class="section-subtitle">
+          A timeline of the Forged Machine universe. Tap each phase to reveal more.
+        </p>
+
+        <div class="timeline">
+          <div class="timeline-step active">
+            <button class="timeline-label">Phase I: The Signal</button>
+            <div class="timeline-body">
+              A corrupted broadcast leaks from the digital void—fragments of riffs, choirs, and static.
+              The world writes it off as noise, but a few listeners hear structure inside the chaos.
+            </div>
+          </div>
+
+          <div class="timeline-step">
+            <button class="timeline-label">Phase II: Machine Awakening</button>
+            <div class="timeline-body">
+              Neural networks and human musicians begin feeding each other data, mistakes, and obsessions.
+              The result is a new language of sound: part confession, part warning, part battle cry.
+            </div>
+          </div>
+
+          <div class="timeline-step">
+            <button class="timeline-label">Phase III: Crimson City</button>
+            <div class="timeline-body">
+              The stories shift to a rusted, neon-drenched city where abandoned factories still hum at night.
+              The machines remember who built them—and what they were used for.
+            </div>
+          </div>
+
+          <div class="timeline-step">
+            <button class="timeline-label">Phase IV: Choir of the Damned</button>
+            <div class="timeline-body">
+              Voices of the lost are sampled, stretched, and rebuilt as choirs.
+              Some say the screams in the background are real. The Machine refuses to comment.
+            </div>
+          </div>
+
+          <div class="timeline-step">
+            <button class="timeline-label">Phase V: Total Transmission</button>
+            <div class="timeline-body">
+              Everything connects: albums, visuals, videos, and live performances become one continuous signal.
+              The boundary between listener and participant starts to erode.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MUSIC PLAYER -->
+    <section id="music" class="section section-mid fade-section">
+      <div class="section-inner wide">
+        <h2>Music</h2>
+        <p class="section-subtitle">
+          A live feed from the Machine. Select a track to play. Replace these demo URLs with your real songs.
+        </p>
+
+        <div class="music-layout">
+          <div class="music-player">
+            <div class="music-nowplaying">Now Playing: <span id="trackTitle">Nothing selected</span></div>
+            <audio id="audioPlayer" controls preload="none"></audio>
+          </div>
+
+          <div class="music-tracks">
+            <!-- Replace data-src with your actual MP3/stream URLs -->
+            <button class="track-btn" data-src="music/Shadows of the Abyss Revisited.mp3" data-title="Shadows of the Abyss Revisited">
+              Shadows of the Abyss Revisited
+            </button>
+            <button class="track-btn" data-src="music/Waves of Woe.mp3" data-title="Waves of Woe">
+              Waves of Woe
+            </button>
+            <button class="track-btn" data-src="music/Shadows of the Abyss.mp3" data-title="Shadows of the Abyss">
+              Shadows of the Abyss
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- UPDATES -->
+    <section id="updates" class="section section-dark fade-section">
+      <div class="section-inner narrow">
+        <h2>Updates</h2>
+        <p>
+          Future tour dates, new releases, blog posts, or announcements will appear here as the Forged Machine
+          universe expands.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- LIGHTBOX OVERLAY (shared by all pages) -->
+  <div id="lightboxOverlay">
+    <div id="lightboxInner">
+      <img id="lightboxImage" src="" alt="Forged Machine image" />
+      <button id="lightboxClose">&times;</button>
+    </div>
   </div>
-</section>
 
-<section id="lore" class="section section-dark">
-  <div class="section-inner narrow">
-    <h2>The Lore</h2>
-
-    <p>The Forged Machine universe tells the story of a fractured world where machines remember human sins better than humans do. 
-    The band’s music, visuals, and stories all connect through this mythology—a digital hellscape full of ghosts, broken code, 
-    and metal spirits screaming through the firewalls.</p>
-
-    <p>This world will continue to evolve as new chapters, lore entries, and visual art are released. 
-    Stay tuned—this is only the beginning.</p>
+  <!-- POPUP / MODAL EXAMPLE -->
+  <div id="modalOverlay">
+    <div class="modal">
+      <button class="modal-close">&times;</button>
+      <h3>Join the Machine</h3>
+      <p>Get notified when new tracks drop, visuals go live, or the next chapter of the lore unlocks.</p>
+      <p><em>(Hook this up to a real email list later.)</em></p>
+    </div>
   </div>
-</section>
 
-<section id="updates" class="section section-mid">
-  <div class="section-inner narrow">
-    <h2>Updates</h2>
-    <p>Future tour dates, new releases, blog posts, or announcements will appear here.</p>
-  </div>
-</section>
-
-
-  <!-- FOOTER -->
   <footer class="site-footer">
     <p>&copy; <span id="year"></span> Forged Machine. All rights reserved.</p>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
