@@ -30,7 +30,8 @@
       <a href="#lore" class="nav-link">Lore</a>
       <a href="#music" class="nav-link">Music</a>
       <a href="gallery.html" class="nav-link">Full Gallery</a>
-      <a href="store.html" class="nav-link">Store</a>
+      <a href="#store" class="nav-link scroll-link">Store</a>
+
     </nav>
   </header>
 
@@ -162,6 +163,58 @@
       </div>
     </section>
 
+    <!-- STORE / VISUAL PACK -->
+    <section id="store" class="section section-dark fade-section">
+      <div class="section-inner wide">
+        <h2>Store</h2>
+        <p class="section-subtitle">
+          Visual packs forged from the Machine. Instant download. Commercial use allowed.
+        </p>
+
+        <div class="store-grid">
+          <div class="store-card">
+            <img src="images/clown2.png" alt="Creepy Carnival Visual Pack cover" class="store-cover" />
+
+            <div class="store-card-body">
+              <h3>Creepy Carnival Visual Pack</h3>
+              <p>
+                106 high-resolution creepy carnival images — perfect for horror videos, music visuals,
+                thumbnails, and dark edits.
+              </p>
+
+              <ul class="store-list">
+                <li>106 images</li>
+                <li>Scene variations for smooth continuity</li>
+                <li>Instant download</li>
+                <li>Commercial use allowed</li>
+              </ul>
+
+              <div class="store-actions">
+                <a
+                  class="btn btn-primary"
+                  href="https://andromeda420.gumroad.com/l/creepy-carnival-visual-pack"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Buy on Gumroad
+                </a>
+
+                <a
+                  class="btn btn-outline"
+                  href="store.html"
+                >
+                  View All Packs
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+
     <!-- UPDATES -->
     <section id="updates" class="section section-dark fade-section">
       <div class="section-inner narrow">
@@ -183,14 +236,31 @@
   </div>
 
   <!-- POPUP / MODAL EXAMPLE -->
-  <div id="modalOverlay">
-    <div class="modal">
-      <button class="modal-close">&times;</button>
-      <h3>Join the Machine</h3>
-      <p>Get notified when new tracks drop, visuals go live, or the next chapter of the lore unlocks.</p>
-      <p><em>(Hook this up to a real email list later.)</em></p>
-    </div>
+<div id="modalOverlay">
+  <div class="modal">
+    <button class="modal-close" aria-label="Close">&times;</button>
+
+    <h3>Join the Machine</h3>
+    <p>Get notified when new tracks drop, visuals go live, or the next chapter of the lore unlocks.</p>
+
+    <form action="https://formspree.io/f/maqydrqe" method="POST">
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+        class="modal-input"
+      />
+
+      <button type="submit" class="btn btn-primary" style="width:100%;">
+        Join the Signal
+      </button>
+    </form>
+
+    <p class="modal-small">No spam. One-way transmission only.</p>
   </div>
+</div>
+
 
   <footer class="site-footer">
     <p>&copy; <span id="year"></span> Forged Machine. All rights reserved.</p>

@@ -517,6 +517,29 @@ body {
   cursor: pointer;
 }
 
+
+.modal {
+  position: relative; /* IMPORTANT: anchors the X button */
+}
+
+.modal-input {
+  width: 100%;
+  padding: 12px;
+  margin: 14px 0;
+  background: #0e0e0e;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.modal-small {
+  margin-top: 12px;
+  font-size: 0.85rem;
+  opacity: 0.75;
+}
+
+
 /* -------- FOOTER -------- */
 .site-footer {
   text-align: center;
@@ -618,4 +641,15 @@ body {
   80% { clip: rect(0, 999px, 0, 0); }
   90% { clip: rect(6px, 999px, 18px, 0); }
   100% { clip: rect(0, 999px, 0, 0); }
+}
+
+
+.store-cover {
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
 }
